@@ -4,7 +4,6 @@ require 'bundler/setup'
 require 'active_record'
 require 'sqlite3'
 require 'logger'
-require 'faker'
 
 # Load all of our ActiveRecord::Base objects.
 require_relative 'models/category.rb' # categories table
@@ -19,4 +18,4 @@ ActiveRecord::Base.establish_connection :adapter => 'sqlite3', :database => 'db/
 ActiveRecord::Base.logger = Logger.new(STDOUT)
 
 # Uncomment this line to make the logger output look nicer terminals that don't support colour coding.
-#ActiveSupport::LogSubscriber.colorize_logging = false
+# ActiveSupport::LogSubscriber.colorize_logging = false
